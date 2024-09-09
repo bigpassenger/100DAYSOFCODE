@@ -15,7 +15,7 @@ class CoffeMaker:
     def is_resource_sufficient(self,drink):
         """This Method can check if there is enough recourses"""
         can_make = True
-        for item in drink.ingredients:
+        for item in drink.ingredients.keys():
             if drink.ingredients[item] > self.resources[item]:
                 print(f"Sorry there is not enough {item}.")
                 can_make = False
