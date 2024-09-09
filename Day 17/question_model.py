@@ -1,6 +1,6 @@
 class Question:
 
-    def __init__(self):
+    def __init__(self,text,answer):
 
-        text = self.text
-        answer = self.answer
+        self.text = text
+        self.answer = answer
